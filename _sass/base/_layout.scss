@@ -1,0 +1,40 @@
+form {
+  margin: 0 auto;
+  max-width: $small-max;
+}
+
+.wrapper {
+  padding: $large-spacing $medium-spacing;
+  margin: 0 auto;
+  max-width: $base-max;
+}
+
+.divider {
+  border-bottom: 2px solid $lt-grey;
+  padding: 0;
+  margin-bottom: $large-spacing;
+
+}
+
+.section {
+  background-color: $lt-grey;
+  padding: 3em 1em;
+}
+
+.form-container {
+  background-color: $white;
+  box-shadow: 0 0 $small-spacing #e3e3e3;
+}
+
+.logo-mark, .logo-full {
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.logo-mark {
+  max-width: 100px;
+}
+
+.logo-full {
+  max-width: 250px;
+}

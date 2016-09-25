@@ -2,22 +2,143 @@
 layout: default
 ---
 
-<div class="home">
+<section class="wrapper">
+  <div class="logo-full"><img src="assets/RangerHealth-Horiz-full.svg"></div>
+  <div class="divider"></div>
+  <div class="intro">
+    <h1>Need an On Call Appointment?</h1>
+    <p>Our client organizations and their employees have access to Ranger Health On Call for the treatment of minor injuries and common ailments in the comfort and convenience of their home or office.  Ranger Health On Call is an affordable, fast and convenient alternative to visiting the doctor’s office or urgent care center and enables employees to seek care most efficiently while allowing the employer to maintain greater productivity.</p>
+  </div>
+</section>
 
-  <!-- <h1 class="page-heading">Posts</h1>
+<div class="section">
+<section class="wrapper form-container">
+  <form>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <!-- Create Account -->
+    <legend>
+      <span class="number">1</span>
+      <h2>Create an Account</h2>
+    </legend>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    <fieldset>
+      <input title="First &amp; Last Name" type="text" placeholder="First &amp; Last Name">
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+      <input title="Date of Birth" type="text" placeholder="Date of Birth" onfocus="(this.type='date')">
 
+      <input title="Phone" type="tel" placeholder="Phone Number">
+
+      <input title="Email" type="email" placeholder="Email Address">
+
+      <input title="Password" type="password" placeholder="Password">
+    </fieldset>
+
+<div class="divider"></div>
+
+    <!-- Set Appointment -->
+    <legend>
+      <span class="number">2</span>
+      <h2>Set Up Appointment</h2>
+    </legend>
+
+    <fieldset>
+      <label for="patient">Who needs care today?</label>
+      <select name="patient_name" class="appt_select">
+        <option value="account_holder">Me</option>
+        <option value="add_patient">Another patient</option>
+      </select>
+
+      <label for="time">What's the best time to see you?</label>
+        <div class="radio-group">
+          <input type="radio" value="today" name="today">
+          <label for="today">Today</label>
+
+          <input type="radio" value="tomorrow" name="tomorrow">
+          <label for="tomorrow">Tomorrow</label>
+        </div>
+
+      <select name="appt_time" class="appt_select">
+        <optgroup label="Morning">
+          <option value="8-9">8am - 9am</option>
+          <option value="9-10">9am - 10am</option>
+          <option value="10-11">10am - 11am</option>
+          <option value="11-12">11am - 12am</option>
+          <option value="12-1">12pm - 1pm</option>
+        </optgroup>
+        <optgroup label="Afternoon/Evening">
+          <option value="1-2">1pm - 2pm</option>
+          <option value="2-3">2pm - 3pm</option>
+          <option value="3-4">3pm - 4pm</option>
+          <option value="4-5">4pm - 5pm</option>
+          <option value="5-6">5pm - 6pm</option>
+        </optgroup>
+      </select>
+
+      <label for="location">Please enter a location</label>
+      <input type="text" name="patient_address" placeholder="Street Address">
+      <input type="text" name="zipcode" placeholder="Zip Code" class="appt_select">
+
+      <label for="appt_notes">Anything else we should know?</label>
+      <textarea name="appt_notes" placeholder="Please provide any additional information about your location and appointment needs here"></textarea>
+    </fieldset>
+
+<div class="divider"></div>
+
+    <legend>
+      <span class="number">3</span>
+      <h2>Confirm Payment</h2>
+    </legend>
+
+    <fieldset>
+        <label for="payment">Please enter payment information</label>
+        <input type="text" placeholder="Card Number">
+
+        <!-- Date Field -->
+        <div class="date-field">
+          <div class="month">
+            <select name="month">
+              <option value="january">January</option>
+              <option value="february">February</option>
+              <option value="march">March</option>
+              <option value="april">April</option>
+              <option value="may">May</option>
+              <option value="june">June</option>
+              <option value="july">July</option>
+              <option value="august">August</option>
+              <option value="september">September</option>
+              <option value="october">October</option>
+              <option value="november">November</option>
+              <option value="december">December</option>
+            </select>
+          </div>
+          <div class="year">
+            <select name="Year">
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Card Verification Field -->
+        <div class="card-verification">
+          <div class="cvv-input">
+            <input type="text" placeholder="CVV">
+          </div>
+            <p class="cvv-details">3 or 4 digits usually found on the signature strip</p>
+        </div>
+    </fieldset>
+
+    <button formaction="confirmation.html" type="submit">Request Appointment</button>
+
+    <p class="notice">If this is an emergency, please call 911. This service is not intended for situations or conditions that require emergency attention.</p>
+
+  </form>
+</section>
 </div>

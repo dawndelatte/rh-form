@@ -1,0 +1,85 @@
+body {
+  font-family: $base-font-family;
+}
+
+h1, h2 {
+  color: $brand-secondary;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: .75em;
+  text-align: center;
+}
+
+h2 {
+  display: inline-block;
+  font-size: 1.8em;
+  line-height: 1.25;
+  vertical-align: middle;
+}
+
+p, form, fieldset, label {
+  color: $dk-text;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.45;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  color: rgba(0,0,0,0.8);
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  color: $white;
+  background-color: $brand-primary;
+  font-family: $base-font-family;
+  font-size: 1.2em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+.notice {
+  margin: $base-spacing 0;
+  font-weight: 300;
+  font-size: $base-font-size;
+  color: $brand-primary;
+  font-style: italic;
+}
+
+.cvv-details {
+  font-size: .89em;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.number {
+  color: $white;
+  line-height: 30px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+.confirm-container {
+  text-align: center;
+
+  h2 {
+    margin-bottom: 1em;
+  }
+
+  p {
+    margin-bottom: 3em;
+  }
+}

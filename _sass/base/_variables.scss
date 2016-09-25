@@ -1,0 +1,23 @@
+// Color
+$brand-primary: #d58140;
+$brand-secondary: #002d73;
+$white: #fff;
+$lt-grey: #f4f4f4;
+$border-grey: #f0f0f0;
+$dk-text: #333;
+
+// Typography
+$base-font-family: 'Roboto', sans-serif;
+$base-font-size: 1em;
+
+// Spacing
+$border-radius: 5px;
+
+$base-max: 700px;
+$small-max: 500px;
+
+$base-spacing: 16px;
+$small-spacing: $base-spacing / 2; // 8px
+$medium-spacing: $small-spacing * 3; // 24px
+$large-spacing: $base-spacing * 2; // 32px
+$xl-spacing: $base-spacing * 3; // 48px
